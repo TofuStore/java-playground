@@ -6,21 +6,25 @@ public class Application {
         if (args.length == 0) {
             System.out.println("Enter a number");
         } else {
-            int i = Integer.parseInt(args[0]);
-            String output = "";
+            System.out.println(fizzBuzz(Integer.parseInt(args[0])));
+        }
+    }
 
-            if (i % 3 == 0) {
-                output += "Fizz";
-            }
-            if (i % 5 == 0) {
-                output += "Buzz";
-            }
+    public static String fizzBuzz(int num) {
+        int i = num;
+        String output = "";
 
-            if (output.length() == 0) {
-                System.out.print(i);
-            } else {
-                System.out.print(output);
-            }
+        if (i % 3 == 0) {
+            output += "Fizz";
+        }
+        if (i % 5 == 0) {
+            output += "Buzz";
+        }
+
+        if (output.length() == 0) {
+            return String.valueOf(i);
+        } else {
+            return output;
         }
     }
 
