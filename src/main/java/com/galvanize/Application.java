@@ -20,8 +20,6 @@ public class Application {
         converter.put("D", 500);
         converter.put("M", 1000);
 
-        System.out.println(converter);
-
         int previous = 100000;
 
         for (int i = 0; i < num.length(); i++) {
