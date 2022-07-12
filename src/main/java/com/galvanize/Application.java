@@ -17,9 +17,9 @@ public class Application {
             }
 
             if (output.length() == 0) {
-                System.out.println(i);
+                System.out.print(i);
             } else {
-                System.out.println(output);
+                System.out.print(output);
             }
         }
     }
